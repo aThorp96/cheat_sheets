@@ -1,0 +1,21 @@
+###########################################
+#           Kubectl Cheat Sheet           #
+###########################################
+
+# Create a deployment
+kubectl create deployment <deployment-name> --image=<imagename>[:version]
+
+# Proxy your localhost into a cluster
+kubectl proxy
+
+# List resources (and info about them)
+kubectl get <resource[type]>
+
+# Dump info about resource
+kubectl describe <resource type>
+
+# Print logs from pod
+kubectl logs <pod>
+
+# Exec command on pod
+kubectl exec <pod> <cmd> [args]

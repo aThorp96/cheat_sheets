@@ -1,0 +1,40 @@
+#######################################
+#####	Minikube Common Commands  #####
+#######################################
+# Pulled from https://gist.github.com/naguer/bfb60b80960159625814f512d8fcc56e
+
+# Start Minikube Service
+minikube start          			
+
+# Start Minikube Service with 4 cpus and 8192 of memory
+minikube start --cpus 4 --memory 8192         	
+
+# Stop Mikikube Service
+minikube stop         				
+
+# Clean the configurations and start clean (maybe also you need rm -rf ./minikube)
+minikube delete         			
+
+# List of Kubernetes versions Minikube currently supports
+minikube get-k8s-versions         		
+
+# Start with a specific version of k8s
+minikube start --kubernetes-version v1.7.5  	
+
+# View ip of Cluster
+minikube ip         				
+
+# Open the Dashboard
+minikube dashboard          			
+
+# Get the Dashboard URL
+minikube dashboard --url         		
+
+# Get the URL of service
+minikube service --url SERVICE          	
+
+# View the status of minikube, cluster and kubectl (Something ips change)
+minikube status         			
+
+# Fix ips change, kubectl misconfigured
+minikube update-context         		
