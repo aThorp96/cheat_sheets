@@ -19,3 +19,6 @@ kubectl logs <pod>
 
 # Exec command on pod
 kubectl exec <pod> <cmd> [args]
+
+# Create service
+kubectl expose <deployment>
